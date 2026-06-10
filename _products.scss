@@ -1,0 +1,51 @@
+// ═══════════════════════════════════
+// components/_products.scss
+// Estilos dos cards de produto
+// ═══════════════════════════════════
+
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+.products {
+  margin-top: v.$spacing-lg;
+  display: grid;
+  grid-template-columns: v.$grid-cols-desktop;
+  column-gap: v.$grid-gap-desktop;
+  row-gap: v.$grid-row-gap;
+  width: 100%;
+
+  @include m.tablet {
+    grid-template-columns: v.$grid-cols-tablet;
+    column-gap: v.$grid-gap-tablet;
+  }
+
+  @include m.mobile {
+    display: block;
+  }
+}
+
+.product-item {
+  img {
+    width: 100%;
+    border-radius: v.$border-radius-md;
+  }
+
+  h4 {
+    margin-top: v.$spacing-xs;
+    font-weight: v.$font-weight-bold;
+  }
+
+  p {
+    margin-top: 4px;
+    font-size: 0.9rem;
+    color: lighten(v.$color-text, 20%);
+  }
+
+  @include m.mobile {
+    margin-bottom: 32px;
+  }
+}
+
+.product-button {
+  @include m.button-base(v.$color-button, v.$color-button-hover);
+}

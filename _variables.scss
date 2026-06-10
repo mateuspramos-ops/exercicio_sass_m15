@@ -1,0 +1,44 @@
+// ═══════════════════════════════════
+// abstracts/_variables.scss
+// Variáveis globais do projeto
+// ═══════════════════════════════════
+
+// Cores
+$color-primary:       #182C61;
+$color-primary-light: #1e3a7a;
+$color-button:        #44bd32;
+$color-button-hover:  #4cd137;
+$color-background:    #f5f6fa;
+$color-white:         #ffffff;
+$color-text:          #333333;
+
+// Tipografia
+$font-family-base: Roboto, sans-serif;
+$font-weight-normal: 400;
+$font-weight-bold:   700;
+
+// Espaçamentos
+$spacing-xs:  8px;
+$spacing-sm:  16px;
+$spacing-md:  24px;
+$spacing-lg:  40px;
+$spacing-xl:  56px;
+
+// Layout
+$container-max-width:    1024px;
+$container-max-width-md: 80%;
+
+// Grid de produtos
+$grid-cols-desktop: repeat(3, 32.66%);
+$grid-cols-tablet:  repeat(2, 48.5%);
+$grid-gap-desktop:  1%;
+$grid-gap-tablet:   3%;
+$grid-row-gap:      4%;
+
+// Bordas
+$border-radius-sm: 8px;
+$border-radius-md: 16px;
+
+// Breakpoints
+$breakpoint-tablet: 1023px;
+$breakpoint-mobile: 767px;

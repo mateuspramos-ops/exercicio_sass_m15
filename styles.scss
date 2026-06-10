@@ -1,0 +1,18 @@
+// ═══════════════════════════════════
+// styles.scss
+// Arquivo principal — importa todos os módulos
+// ═══════════════════════════════════
+
+// 1. Abstracts (variáveis e mixins — sem output CSS)
+@use 'abstracts/variables';
+@use 'abstracts/mixins';
+
+// 2. Base (reset global)
+@use 'base/reset';
+
+// 3. Layout (container, header)
+@use 'layout/container';
+@use 'layout/header';
+
+// 4. Components (produtos)
+@use 'components/products';

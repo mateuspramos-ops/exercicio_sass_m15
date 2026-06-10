@@ -1,0 +1,21 @@
+// ═══════════════════════════════════
+// layout/_container.scss
+// Estilos do container principal
+// ═══════════════════════════════════
+
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+.container {
+  max-width: v.$container-max-width;
+  width: 100%;
+  margin: 0 auto;
+
+  @include m.tablet {
+    max-width: v.$container-max-width-md;
+  }
+}
+
+section {
+  padding: v.$spacing-xl 0;
+}
