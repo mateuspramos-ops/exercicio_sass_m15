@@ -1,0 +1,25 @@
+// sass/_responsive.scss
+// Media queries responsivas
+
+@use 'variables' as v;
+
+@media screen and (max-width: 1023px) {
+    .container {
+        max-width: v.$container-width-md;
+    }
+
+    .products {
+        grid-template-columns: v.$grid-cols-tablet;
+        column-gap: v.$grid-gap-tablet;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .products {
+        display: block;
+    }
+
+    .product-item {
+        margin-bottom: 32px;
+    }
+}

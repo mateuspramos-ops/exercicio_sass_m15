@@ -1,0 +1,39 @@
+// sass/_products.scss
+// Estilos dos produtos
+
+@use 'variables' as v;
+
+section {
+    padding: v.$spacing-section 0;
+}
+
+.products {
+    margin-top: v.$spacing-products;
+    display: grid;
+    grid-template-columns: v.$grid-cols-desktop;
+    column-gap: v.$grid-gap-desktop;
+    row-gap: v.$grid-row-gap;
+    width: 100%;
+}
+
+.product-item {
+    img {
+        width: 100%;
+        border-radius: v.$border-radius-img;
+    }
+}
+
+.product-button {
+    display: block;
+    background-color: v.$color-button;
+    color: v.$color-text-link;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: v.$border-radius-button;
+    margin-top: 8px;
+    text-decoration: none;
+
+    &:hover {
+        background-color: v.$color-button-hover;
+    }
+}

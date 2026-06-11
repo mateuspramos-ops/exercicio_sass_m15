@@ -1,0 +1,16 @@
+// sass/main.scss
+// Arquivo principal — importa todos os módulos
+// Para compilar: npm run sass
+
+@use 'variables' as v;
+@use 'reset';
+@use 'header';
+@use 'products';
+@use 'responsive';
+
+// Container — compartilhado entre header e section
+.container {
+    max-width: v.$container-width;
+    width: 100%;
+    margin: 0 auto;
+}
